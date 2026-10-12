@@ -28,7 +28,7 @@ export default function Hero({ image, video, slides, headline, subheadline, desc
   const activeSlide = slideItems[currentSlide];
 
   return (
-    <section className={`relative ${height} w-full overflow-hidden`}>
+    <section className={`site-page-hero relative ${height} w-full overflow-hidden`}>
       <div
         className="absolute inset-0 overflow-hidden bg-cover bg-center bg-no-repeat"
         style={activeSlide.video ? undefined : { backgroundImage: `url("${activeSlide.image}")` }}
@@ -51,7 +51,7 @@ export default function Hero({ image, video, slides, headline, subheadline, desc
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 pt-[190px] text-center sm:pt-[210px] lg:pt-[250px]">
+      <div className="site-hero__copy relative z-10 flex h-full flex-col items-center justify-center px-6 pt-[190px] text-center sm:pt-[210px] lg:pt-[250px]">
         <h1 className="max-w-6xl whitespace-pre-line text-6xl leading-[0.9] text-white sm:text-7xl md:text-8xl font-body font-normal">
           {activeSlide.headline ?? headline}
         </h1>

@@ -18,7 +18,6 @@ const footerGroups: { title: string; links: { label: string; href?: string }[] }
       { label: "About NuSafiri" },
       { label: "MEMOIR" },
       { label: "Book Consultation" },
-      { label: "Terms of Service" },
     ],
   },
 ];
