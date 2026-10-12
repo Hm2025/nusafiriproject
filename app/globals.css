@@ -4656,6 +4656,11 @@ html.site-motion-ready .about-export__art img.about-export__flowers.site-motion-
 }
 
 @media (max-width: 760px) {
+  .memoir-export-hero .about-hero-header,
+  .contact-page-hero .about-hero-header {
+    z-index: 3;
+  }
+
   .about-hero-header__toggle {
     display: block;
     z-index: 60;
