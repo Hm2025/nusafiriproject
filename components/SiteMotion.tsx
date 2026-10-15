@@ -27,21 +27,38 @@ export default function SiteMotion() {
         target.matches(".experience-card") ||
         !target.closest(".experience-card"),
     );
-    const revealTargets = targets.length > 0 ? targets : containers;
+    const revealTargets = [
+      ...targets,
+      ...containers.filter(
+        (container) =>
+          !targets.some(
+            (target) => target.closest("section, article") === container,
+          ),
+      ),
+    ];
     if (revealTargets.length === 0) return;
 
     const revealGroups = new Map<Element, HTMLElement[]>();
     const revealCounts = new Map<Element, number>();
+    const motionDirections = [
+      [-48, 0],
+      [48, 0],
+      [0, -36],
+      [0, 36],
+    ];
     revealTargets.forEach((target) => {
       const isImage = target instanceof HTMLImageElement;
       target.classList.add(isImage ? "site-motion-image-target" : "site-motion-target");
       const group = target.closest("section, article") ?? target.parentElement ?? target;
       const groupTargets = revealGroups.get(group) ?? [];
       const index = revealCounts.get(group) ?? 0;
+      const [offsetX, offsetY] = motionDirections[index % motionDirections.length];
       groupTargets.push(target);
       revealGroups.set(group, groupTargets);
       revealCounts.set(group, index + 1);
       target.style.setProperty("--site-motion-delay", `${index * 140}ms`);
+      target.style.setProperty("--site-motion-offset-x", `${offsetX}px`);
+      target.style.setProperty("--site-motion-offset-y", `${offsetY}px`);
     });
 
     const observer = new IntersectionObserver(
@@ -66,6 +83,8 @@ export default function SiteMotion() {
       revealTargets.forEach((target) => {
         target.classList.remove("site-motion-target", "site-motion-image-target", "site-motion-visible");
         target.style.removeProperty("--site-motion-delay");
+        target.style.removeProperty("--site-motion-offset-x");
+        target.style.removeProperty("--site-motion-offset-y");
       });
     };
   }, [pathname]);
