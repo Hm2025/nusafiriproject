@@ -40,12 +40,18 @@ export default function SiteMotion() {
 
     const revealGroups = new Map<Element, HTMLElement[]>();
     const revealCounts = new Map<Element, number>();
-    const motionDirections = [
-      [-48, 0],
-      [48, 0],
-      [0, -36],
-      [0, 36],
-    ];
+    const isMobileViewport = window.matchMedia("(max-width: 760px)").matches;
+    const motionDirections = isMobileViewport
+      ? [
+          [-48, 0],
+          [48, 0],
+        ]
+      : [
+          [-48, 0],
+          [48, 0],
+          [0, -36],
+          [0, 36],
+        ];
     revealTargets.forEach((target) => {
       const isImage = target instanceof HTMLImageElement;
       target.classList.add(isImage ? "site-motion-image-target" : "site-motion-target");
@@ -56,9 +62,21 @@ export default function SiteMotion() {
       groupTargets.push(target);
       revealGroups.set(group, groupTargets);
       revealCounts.set(group, index + 1);
-      target.style.setProperty("--site-motion-delay", `${index * 140}ms`);
-      target.style.setProperty("--site-motion-offset-x", `${offsetX}px`);
-      target.style.setProperty("--site-motion-offset-y", `${offsetY}px`);
+      target.style.setProperty(
+        "--site-motion-delay",
+        isMobileViewport ? "0ms" : `${index * 140}ms`,
+      );
+      target.style.setProperty(
+        "--site-motion-offset-x",
+        isMobileViewport ? "0px" : `${offsetX}px`,
+      );
+      target.style.setProperty(
+        "--site-motion-offset-y",
+        isMobileViewport ? "0px" : `${offsetY}px`,
+      );
+      if (isMobileViewport) {
+        target.style.setProperty("--site-motion-mobile-offset-x", `${offsetX}px`);
+      }
     });
 
     const observer = new IntersectionObserver(
@@ -85,6 +103,7 @@ export default function SiteMotion() {
         target.style.removeProperty("--site-motion-delay");
         target.style.removeProperty("--site-motion-offset-x");
         target.style.removeProperty("--site-motion-offset-y");
+        target.style.removeProperty("--site-motion-mobile-offset-x");
       });
     };
   }, [pathname]);

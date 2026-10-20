@@ -5803,3 +5803,44 @@ html.site-motion-ready .experiences-closing .experiences-closing__button.site-mo
     max-width: 360px;
   }
 }
+
+@media (max-width: 760px) and (prefers-reduced-motion: no-preference) {
+  html.site-motion-ready .site-motion-target,
+  html.site-motion-ready .site-motion-image-target {
+    animation: none !important;
+    opacity: 1 !important;
+    rotate: none !important;
+    transition: translate 1100ms cubic-bezier(0.22, 0.75, 0.25, 1) !important;
+    will-change: translate;
+  }
+
+  html.site-motion-ready .site-motion-target:not(.site-motion-visible),
+  html.site-motion-ready .site-motion-image-target:not(.site-motion-visible) {
+    translate: var(--site-motion-mobile-offset-x, 0px) 0 !important;
+  }
+
+  html.site-motion-ready .site-motion-target.site-motion-visible,
+  html.site-motion-ready .site-motion-image-target.site-motion-visible {
+    translate: 0 0 !important;
+  }
+
+  html.site-motion-ready .about-hero__title.site-motion-target,
+  html.site-motion-ready .about-itinerary__title.site-motion-target {
+    transform: translate(-50%, 0) !important;
+  }
+
+  html.site-motion-ready .gallery-mosaic__card.site-motion-target,
+  html.site-motion-ready .gallery-mosaic__card img.site-motion-image-target,
+  html.site-motion-ready .home-hero__title.site-motion-target,
+  html.site-motion-ready .home-hero__subtitle.site-motion-target,
+  html.site-motion-ready .about-export__copy .site-motion-target,
+  html.site-motion-ready .about-export__art img.site-motion-image-target {
+    transform: none !important;
+  }
+
+  html.site-motion-ready .about-hero__title.site-motion-target span {
+    animation: none !important;
+    rotate: none !important;
+    translate: none !important;
+  }
+}
