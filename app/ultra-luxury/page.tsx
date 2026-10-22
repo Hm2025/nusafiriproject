@@ -17,7 +17,7 @@ export default function UltraLuxury() {
         <section className="experiences-hero" aria-labelledby="experiences-hero-title">
           <Image
             className="experiences-hero__background"
-            src="/Section.png"
+            src="/Section.webp"
             alt=""
             fill
             priority

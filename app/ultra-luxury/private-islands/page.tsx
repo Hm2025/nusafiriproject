@@ -15,7 +15,7 @@ export default function PrivateIslands() {
       <Header />
       <main>
         <Hero
-          image="/hugh-whyte-uunjTbpjWAM-unsplash.jpg"
+          image="/hugh-whyte-uunjTbpjWAM-unsplash.webp"
           headline={"Private Islands\n& Ultra-Luxury\nVillas"}
           subheadline="Where privacy becomes the destination"
           description="For travelers who value space, control, and true seclusion."

@@ -308,7 +308,7 @@ button:focus-visible {
     margin-inline: auto;
     overflow: hidden;
     background-color: #063a39;
-    background-image: linear-gradient(rgb(0 0 0 / 28%), rgb(0 0 0 / 28%)), url('/Gemini_Generated_Image_fs1606fs1606fs16 1.png');
+    background-image: linear-gradient(rgb(0 0 0 / 28%), rgb(0 0 0 / 28%)), url('/Gemini_Generated_Image_fs1606fs1606fs16 1.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1349,7 +1349,7 @@ button:focus-visible {
       height: 100svh;
       min-height: 100svh;
       aspect-ratio: auto;
-      background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)), var(--service-page-hero-mobile-image, url('/Gemini_Generated_Image_fs1606fs1606fs16 1.png'));
+      background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)), var(--service-page-hero-mobile-image, url('/Gemini_Generated_Image_fs1606fs1606fs16 1.webp'));
       background-size: cover;
       background-position: center center;
     }
@@ -2447,7 +2447,7 @@ button:focus-visible {
     margin-inline: auto;
     overflow: hidden;
     background-color: #063a39;
-    background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)), url('/Overlay.png');
+    background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)), url('/Overlay.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -6321,7 +6321,7 @@ button:active,
     min-height: 0;
     aspect-ratio: 477 / 814;
     background-color: #211d1a;
-    background-image: url("/Overlay%20(5).png");
+    background-image: url("/Overlay%20(5).webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

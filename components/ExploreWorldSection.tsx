@@ -2,9 +2,10 @@ export default function ExploreWorldSection() {
   return (
     <section className="relative h-[520px] overflow-hidden bg-[#111] md:h-[590px]">
       <img
-        src="/images/figma-world-background.png"
+        src="/images/figma-world-background.webp"
         alt="Tropical landscape with mountain villas and a rainbow"
         className="absolute inset-0 h-full w-full object-cover"
+        loading="lazy"
       />
       <div className="absolute inset-0 bg-black/10" />
       <div className="relative flex h-[520px] items-end justify-end px-6 pb-16 md:h-[590px] md:px-12 md:pb-20 lg:px-[8%] lg:pb-20">

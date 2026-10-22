@@ -43,6 +43,7 @@ export default function BlogPreview({ posts, eyebrow }: BlogPreviewProps) {
                     src={post.image}
                     alt={post.title}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex flex-1 flex-col px-5 pb-7 pt-6 text-center md:px-6">

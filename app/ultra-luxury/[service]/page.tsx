@@ -29,18 +29,18 @@ export default async function CuratedServicePage({
         title={activeService.title}
         mobileImage={
           service === "hospitality-guest-management"
-            ? "/Gemini_Generated_Image_fs1606fs1606fs16 1 (1).png"
+            ? "/Gemini_Generated_Image_fs1606fs1606fs16 1 (1).webp"
             : undefined
         }
         image={
           service === "destination-celebrations"
-            ? "/Gemini_Generated_Image_m2pryim2pryim2pr%202%20%281%29.png"
+            ? "/Gemini_Generated_Image_m2pryim2pryim2pr%202%20%281%29.webp"
             : service === "bespoke-experiences"
-            ? "/Gemini_Generated_Image_9j52tc9j52tc9j52 2.png"
+            ? "/Gemini_Generated_Image_9j52tc9j52tc9j52 2.webp"
             : service === "travel-concierge"
-            ? "/Gemini_Generated_Image_m2pryim2pryim2pr 2.png"
+            ? "/Gemini_Generated_Image_m2pryim2pryim2pr 2.webp"
             : service === "vip-concierge"
-              ? "/Gemini_Generated_Image_eg7ubeeg7ubeeg7u 1.png"
+              ? "/Gemini_Generated_Image_eg7ubeeg7ubeeg7u 1.webp"
               : undefined
         }
       />
@@ -51,18 +51,18 @@ export default async function CuratedServicePage({
           headingOverride="SERVICE OFFERING"
           imageOverride={
             service === "destination-celebrations"
-              ? "/image 22 (1).png"
+              ? "/image 22 (1).webp"
               : service === "bespoke-experiences"
-              ? "/7.png.png"
+              ? "/7.png.webp"
               : service === "travel-concierge"
-              ? "/Gemini_Generated_Image_epxe35epxe35epxe 1 (4).png"
+              ? "/Gemini_Generated_Image_epxe35epxe35epxe 1 (4).webp"
               : service === "vip-concierge"
-                ? "/Gemini_Generated_Image_epxe35epxe35epxe 1 (3).png"
+                ? "/Gemini_Generated_Image_epxe35epxe35epxe 1 (3).webp"
                 : undefined
           }
           mobileImageOverride={
             service === "hospitality-guest-management"
-              ? "/Frame 61.png"
+              ? "/Frame 61.webp"
               : undefined
           }
           imageAltOverride={

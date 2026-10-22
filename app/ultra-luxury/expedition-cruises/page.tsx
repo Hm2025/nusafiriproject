@@ -15,7 +15,7 @@ export default function ExpeditionCruises() {
       <Header />
       <main>
         <Hero
-          image="/xuyu-chi-Xodpk0gAJzI-unsplash.jpg"
+          image="/xuyu-chi-Xodpk0gAJzI-unsplash.webp"
           headline="Expedition Cruises"
           subheadline="Where Exploration Meets Uncompromising Luxury"
           description="Expedition cruising is about access — reaching the most remote corners of the world in exceptional comfort, guided by expert teams and elevated by refined onboard living."

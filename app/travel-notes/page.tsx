@@ -2,13 +2,13 @@ import Header from "@/components/Header";
  
 
 const memoirGalleryImages = [
-  { src: "/Frame%2076.png", alt: "A yacht cruising across clear turquoise water" },
-  { src: "/image%2036.png", alt: "Private pool cabanas overlooking the sea at sunset" },
-  { src: "/image%2030.png", alt: "A tropical villa with poolside loungers" },
-  { src: "/Frame%2078.png", alt: "An aerial view of an island beach and seaplane" },
-  { src: "/Frame%2079.png", alt: "A guest enjoying a drink in an elegant hotel lounge" },
-  { src: "/Frame%2077.png", alt: "A mountain-view resort terrace with sun loungers" },
-  { src: "/image%2035.png", alt: "A white Santorini villa overlooking the sea" },
+  { src: "/Frame%2076.webp", alt: "A yacht cruising across clear turquoise water" },
+  { src: "/image%2036.webp", alt: "Private pool cabanas overlooking the sea at sunset" },
+  { src: "/image%2030.webp", alt: "A tropical villa with poolside loungers" },
+  { src: "/Frame%2078.webp", alt: "An aerial view of an island beach and seaplane" },
+  { src: "/Frame%2079.webp", alt: "A guest enjoying a drink in an elegant hotel lounge" },
+  { src: "/Frame%2077.webp", alt: "A mountain-view resort terrace with sun loungers" },
+  { src: "/image%2035.webp", alt: "A white Santorini villa overlooking the sea" },
 ];
 
 export default function TravelNotes() {
@@ -17,7 +17,7 @@ export default function TravelNotes() {
       <main>
         <section className="home-hero memoir-export-hero" aria-labelledby="memoir-hero-title">
           <div className="home-hero__background" aria-hidden="true">
-            <img src="/Gemini_Generated_Image_epxe35epxe35epxe%201%20(5).png" alt="" />
+            <img src="/Gemini_Generated_Image_epxe35epxe35epxe%201%20(5).webp" alt="" />
           </div>
           <div className="memoir-export-hero__shade" aria-hidden="true" />
           <Header

@@ -34,7 +34,7 @@ export default function Contact() {
       <main>
         <section className="contact-page-hero" aria-labelledby="contact-hero-title">
           <div className="home-hero__background" aria-hidden="true">
-            <img src="/Gemini_Generated_Image_epxe35epxe35epxe%201%20(6).png" alt="" />
+            <img src="/Gemini_Generated_Image_epxe35epxe35epxe%201%20(6).webp" alt="" />
           </div>
           <div className="contact-page-hero__shade" aria-hidden="true" />
           <Header
@@ -52,6 +52,7 @@ export default function Contact() {
               <img
                 src="/Frame%2073%20(1).png"
                 alt="Start the Conversation. Tell Us What You're Planning. Whether you're planning a complex journey, need help with a luxury hotel stay, or want to discuss an ongoing travel relationship, our team is here to help. Contact us by phone, email, or WhatsApp, and we'll make sure your inquiry reaches the right Advisor."
+                loading="lazy"
               />
               <div className="contact-page-intro-art__mobile-copy">
                 <p>Start the Conversation</p>

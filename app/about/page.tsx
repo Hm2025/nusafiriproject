@@ -78,7 +78,7 @@ export default function AboutPage() {
 
       <section className="about-itinerary" aria-labelledby="about-itinerary-title">
         <div className="about-itinerary__canvas">
-          <img className="about-itinerary__image" src="/image%2020.png" alt="" aria-hidden="true" />
+          <img className="about-itinerary__image" src="/image%2020.webp" alt="" aria-hidden="true" loading="lazy" />
           <div className="about-itinerary__shade" aria-hidden="true" />
           <h2 id="about-itinerary-title" className="about-itinerary__title">
             Feeling is part of the itinerary.
@@ -101,8 +101,9 @@ export default function AboutPage() {
                   <div className="about-team__portrait-wrap">
                     <img
                       className="about-team__portrait"
-                      src={profile === "first" ? "/image%2021.png" : "/image%2021%20(1).png"}
+                      src={profile === "first" ? "/image%2021.webp" : "/image%2021%20(1).webp"}
                       alt="Momo Etiko"
+                      loading="lazy"
                     />
                     <h3 className="about-team__name">Momo Etiko</h3>
                   </div>
@@ -133,7 +134,7 @@ export default function AboutPage() {
             <span>The emotional</span>
             <span>outcome matters</span>
           </p>
-          <img className="about-team__handshake" src="/image%2023.png" alt="A host welcoming a guest" />
+          <img className="about-team__handshake" src="/image%2023.webp" alt="A host welcoming a guest" loading="lazy" />
           <p className="about-team__message about-team__message--bottom">
             <span>just as much</span>
             <span>as the logistics.</span>

@@ -2,16 +2,16 @@ const assetPathPrefix = "https://www.figma.com/api/mcp/asset/50a7106a-b128-4f5a-
 const imgImage3 = `${assetPathPrefix}/d56a9.png`;
 const imgImage2 = `${assetPathPrefix}/08353.png`;
 const imgPlumeriaFrangipaniTempleTreeFlowerCloseUpSingleWhiteyellowPlumeriaFlowersBouquetIsolatedWhiteBackground1 = `${assetPathPrefix}/d169a.png`;
-const imgImage15 = "/image%2015.png";
-const imgImage22 = "/image%2022.png";
-const imgImage26 = "/image%2026.png";
-const imgGeminiGeneratedImage8Ly3R98Ly3R98Ly3Photoroom1 = "/Gemini_Generated_Image_8ly3r98ly3r98ly3-Photoroom%201.png";
-const imgLuxuryVillaWithPoolGarden1 = "/luxury-villa-with-pool-garden%201.png";
-const imgImage19 = "/image%2019.png";
-const imgImage20 = "/image%2019%20(1).png";
-const imgImage21 = "/image%2019%20(2).png";
-const imgImage23 = "/image%2019%20(4).png";
-const imgImage24 = "/image%2019%20(3).png";
+const imgImage15 = "/image%2015.webp";
+const imgImage22 = "/image%2022.webp";
+const imgImage26 = "/image%2026.webp";
+const imgGeminiGeneratedImage8Ly3R98Ly3R98Ly3Photoroom1 = "/Gemini_Generated_Image_8ly3r98ly3r98ly3-Photoroom%201.webp";
+const imgLuxuryVillaWithPoolGarden1 = "/luxury-villa-with-pool-garden%201.webp";
+const imgImage19 = "/image%2019.webp";
+const imgImage20 = "/image%2019%20(1).webp";
+const imgImage21 = "/image%2019%20(2).webp";
+const imgImage23 = "/image%2019%20(4).webp";
+const imgImage24 = "/image%2019%20(3).webp";
 const imgFrame49 = "/figma/nusafiri-logo.svg";
 
 import Header from "@/components/Header";
@@ -28,7 +28,7 @@ const experienceItems = [
 const experienceImages = [imgImage19, imgImage20, imgImage21, imgImage23, imgImage24];
 const aboutInteriorImage = "/images/abt1.png";
 const aboutDestinationImage = "/images/abt2.png";
-const aboutFlowerImage = "/images/abt3.png";
+const aboutFlowerImage = "/images/abt3.webp";
 
 export default function Home() {
   return (
@@ -37,8 +37,8 @@ export default function Home() {
         <section className="home-hero relative h-[1055px] w-full overflow-hidden" data-node-id="2016:4">
           <div className="home-hero__background" aria-hidden="true" data-node-id="2016:6">
             <picture>
-              <source media="(max-width: 760px)" srcSet="/Overlay%20(4).png" />
-              <img src="/Overlay%20(3).png" alt="" />
+              <source media="(max-width: 760px)" srcSet="/Overlay%20(4).webp" />
+              <img src="/Overlay%20(3).webp" alt="" />
             </picture>
           </div>
 
@@ -88,10 +88,10 @@ export default function Home() {
             </div>
 
             <div className="about-export__art" aria-label="Hospitality, destination and floral imagery">
-              <img className="about-export__interior" src="/image%203.png" alt="Elegant hotel interior" />
+              <img className="about-export__interior" src="/image%203.webp" alt="Elegant hotel interior" loading="lazy" />
               <picture>
-                <source media="(max-width: 760px)" srcSet="/image%202%20(1).png" />
-                <img className="about-export__destination" src="/image%202.png" alt="Whitewashed Mediterranean village" />
+                <source media="(max-width: 760px)" srcSet="/image%202%20(1).webp" />
+                <img className="about-export__destination" src="/image%202.webp" alt="Whitewashed Mediterranean village" loading="lazy" />
               </picture>
               <picture>
                 <source
@@ -100,8 +100,9 @@ export default function Home() {
                 />
                 <img
                   className="about-export__flowers"
-                  src="/plumeria-frangipani-temple-tree-flower-close-up-single-whiteyellow-plumeria-flowers-bouquet-isolated-white-background%201.png"
+                  src="/plumeria-frangipani-temple-tree-flower-close-up-single-whiteyellow-plumeria-flowers-bouquet-isolated-white-background%201.webp"
                   alt="White and yellow plumeria flowers"
+                  loading="lazy"
                 />
               </picture>
             </div>
@@ -110,13 +111,14 @@ export default function Home() {
 
         <section className="itinerary-hero" data-node-id="2016:83" aria-label="NuSafiri travel experiences">
           <div className="itinerary-hero__canvas">
-            <img className="itinerary-hero__background" alt="" src={imgImage15} />
+            <img className="itinerary-hero__background" alt="" src={imgImage15} loading="lazy" />
             <div className="itinerary-hero__shade" aria-hidden="true" />
             <img className="itinerary-hero__logo" alt="NuSafiri" src={imgFrame49} />
             <img
               className="itinerary-hero__photo"
               alt="A group of NuSafiri guests enjoying a trip to Santorini"
               src={imgImage22}
+              loading="lazy"
             />
             <h2 className="itinerary-hero__headline">Feeling is part of the itinerary.</h2>
           </div>
@@ -125,12 +127,12 @@ export default function Home() {
         <section className="service-story" aria-labelledby="service-story-title">
           <div className="service-story__canvas">
             <picture>
-              <source media="(max-width: 760px)" srcSet="/image%2026%20(1).png" />
-              <img className="service-story__coast" src={imgImage26} alt="" aria-hidden="true" />
+              <source media="(max-width: 760px)" srcSet="/image%2026%20(1).webp" />
+              <img className="service-story__coast" src={imgImage26} alt="" aria-hidden="true" loading="lazy" />
             </picture>
             <div className="service-story__panel" aria-hidden="true" />
             <div className="service-story__pattern-frame" aria-hidden="true">
-              <img className="service-story__pattern" src="/Logo%26Patterns-03%206%20(Traced).png" alt="" />
+              <img className="service-story__pattern" src="/Logo%26Patterns-03%206%20(Traced).png" alt="" loading="lazy" />
             </div>
             <div className="service-story__copy">
               <h2 id="service-story-title">
@@ -144,20 +146,21 @@ export default function Home() {
             <picture>
               <source
                 media="(max-width: 760px)"
-                srcSet="/Gemini_Generated_Image_8ly3r98ly3r98ly3-Photoroom%201%20(1).png"
+                srcSet="/Gemini_Generated_Image_8ly3r98ly3r98ly3-Photoroom%201%20(1).webp"
               />
               <img
                 className="service-story__luggage"
                 src={imgGeminiGeneratedImage8Ly3R98Ly3R98Ly3Photoroom1}
                 alt=""
                 aria-hidden="true"
+                loading="lazy"
               />
             </picture>
           </div>
         </section>
 
         <section className="experiences-export" aria-labelledby="experiences-export-title">
-          <img className="experiences-export__backdrop" src={imgLuxuryVillaWithPoolGarden1} alt="" aria-hidden="true" />
+          <img className="experiences-export__backdrop" src={imgLuxuryVillaWithPoolGarden1} alt="" aria-hidden="true" loading="lazy" />
           <div className="experiences-export__panel">
             <h2 id="experiences-export-title" className="experiences-export__heading">
               <span>OUR</span>
@@ -166,7 +169,7 @@ export default function Home() {
             <div className="experiences-export__cards">
               {experienceItems.map((item, index) => (
                 <Link key={item.title} href={item.href} className="experience-card">
-                  <img className="experience-card__image" src={experienceImages[index]} alt="" />
+                  <img className="experience-card__image" src={experienceImages[index]} alt="" loading="lazy" />
                   <div className="experience-card__caption">
                     <h3>{item.title.split("\n").map((line) => <span key={line}>{line}</span>)}</h3>
                     <p>{item.text}</p>

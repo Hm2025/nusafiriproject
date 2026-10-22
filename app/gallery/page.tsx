@@ -2,13 +2,13 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 
 const galleryImages = [
-  { src: "/Frame%2076.png", alt: "A yacht cruising across clear turquoise water" },
-  { src: "/image%2036.png", alt: "Private pool cabanas at sunset" },
-  { src: "/image%2030.png", alt: "A tropical villa and poolside loungers" },
-  { src: "/Frame%2078.png", alt: "Aerial view of an island beach and seaplane" },
-  { src: "/Frame%2079.png", alt: "A guest enjoying a drink in an elegant hotel lounge" },
-  { src: "/Frame%2077.png", alt: "Sun loungers beside a resort swimming pool" },
-  { src: "/image%2035.png", alt: "A white Santorini villa overlooking the sea" },
+  { src: "/Frame%2076.webp", alt: "A yacht cruising across clear turquoise water" },
+  { src: "/image%2036.webp", alt: "Private pool cabanas at sunset" },
+  { src: "/image%2030.webp", alt: "A tropical villa and poolside loungers" },
+  { src: "/Frame%2078.webp", alt: "Aerial view of an island beach and seaplane" },
+  { src: "/Frame%2079.webp", alt: "A guest enjoying a drink in an elegant hotel lounge" },
+  { src: "/Frame%2077.webp", alt: "Sun loungers beside a resort swimming pool" },
+  { src: "/image%2035.webp", alt: "A white Santorini villa overlooking the sea" },
 ];
 
 export default function Gallery() {

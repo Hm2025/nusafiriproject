@@ -121,7 +121,7 @@ export default function Header({ variant = "default", logoSrc = "/figma/nusafiri
         {isExperiencesItem && experiencesMenuOpen && (
           <div id="experiences-mega-menu" className="experiences-mega-menu">
             <div className="experiences-mega-menu__feature">
-              <Image src="/Section.png" alt="" fill sizes="(max-width: 1200px) 35vw, 360px" />
+              <Image src="/Section.webp" alt="" fill sizes="(max-width: 1200px) 35vw, 360px" />
               <div className="experiences-mega-menu__feature-shade" aria-hidden="true" />
               <div className="experiences-mega-menu__feature-copy">
                 <p>NU SAFIRI EXPERIENCES</p>

@@ -25,9 +25,10 @@ export default function BusinessTravelSection() {
   return (
     <section className="relative overflow-hidden bg-white px-6 pb-16 pt-16 md:px-12 md:pb-20 md:pt-20 lg:px-20 lg:pb-20 lg:pt-24">
       <img
-        src="/images/business-wild.png"
+        src="/images/business-wild.webp"
         alt="African wildlife"
         className="pointer-events-none absolute -bottom-24 -left-20 z-0 w-[480px] max-w-none md:-bottom-28 md:-left-32 md:w-[620px] lg:-bottom-36 lg:-left-36 lg:w-[720px]"
+        loading="lazy"
       />
 
       <div className="relative z-10 mx-auto max-w-[1355px]">
@@ -55,6 +56,7 @@ export default function BusinessTravelSection() {
                   src={card.image}
                   alt={card.title}
                   className="aspect-[275/140] w-full rounded-[10px] object-cover"
+                  loading="lazy"
                 />
                 <h3 className="mt-3 text-center font-caslon text-xl font-medium italic leading-tight text-[#111] md:text-2xl">
                   {card.title}

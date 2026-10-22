@@ -3,7 +3,7 @@ export const curatedServices = [
     id: "hospitality-guest-management",
     number: "01",
     title: "Hospitality & Guest Management",
-    image: "/Gemini_Generated_Image_epxe35epxe35epxe 1 (2).png",
+    image: "/Gemini_Generated_Image_epxe35epxe35epxe 1 (2).webp",
     alt: "A hotel attendant assisting a guest with luggage beside a brass luggage cart",
     quote: "Make every guest feel expected, welcomed and valued.",
     paragraphs: [
@@ -27,7 +27,7 @@ export const curatedServices = [
     id: "vip-concierge",
     number: "02",
     title: "VIP Concierge services",
-    image: "/Container-1.png",
+    image: "/Container-1.webp",
     alt: "A private concierge welcoming a guest at a cafe",
     quote: "Your time is valuable. Your needs deserve attention.",
     paragraphs: [
@@ -52,7 +52,7 @@ export const curatedServices = [
     id: "travel-concierge",
     number: "03",
     title: "Travel Concierge",
-    image: "/Container-2.png",
+    image: "/Container-2.webp",
     alt: "Giraffes moving across a golden African savannah",
     quote: "Travel planning, with someone thoughtful in your corner.",
     paragraphs: [
@@ -77,7 +77,7 @@ export const curatedServices = [
     id: "bespoke-experiences",
     number: "04",
     title: "Bespoke Experiences",
-    image: "/Container-3.png",
+    image: "/Container-3.webp",
     alt: "A traveller enjoying a bespoke villa experience",
     quote: "Designed around your interests, your pace and your story.",
     paragraphs: [
@@ -101,7 +101,7 @@ export const curatedServices = [
     id: "destination-celebrations",
     number: "05",
     title: "Destination Celebrations",
-    image: "/Container-4.png",
+    image: "/Container-4.webp",
     alt: "A celebration in a beautiful private island destination",
     quote: "Give your special moments a setting worth remembering.",
     paragraphs: [
