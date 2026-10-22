@@ -6399,6 +6399,7 @@ button:active,
     left: 20px;
     width: auto;
     padding: 0;
+    transform: none;
   }
 
   .experiences-hero__copy h1 {
