@@ -20,7 +20,7 @@ const navItems: NavItem[] = [
   { label: "ABOUT", href: "/about/" },
   { label: "EXPERIENCE", href: "/ultra-luxury/" },
   { label: "MEMOIR", href: "/travel-notes/" },
-  { label: "BOOKINGS", href: "/plan-my-trip/" },
+  { label: "PLAN MY TRIP", href: "/plan-my-trip/" },
   { label: "CONTACT US", href: "/contact/" },
 ];
 
@@ -91,7 +91,7 @@ export default function Header({ variant = "default", logoSrc = "/figma/nusafiri
         {blockedMenuUrls.has(item.href) ? (
           <span
             aria-disabled="true"
-            className="site-nav-disabled block max-w-[140px] cursor-not-allowed text-center text-[10px] font-medium uppercase leading-tight tracking-[0.2em] text-white/40 sm:text-[11px]"
+            className="site-nav-disabled block max-w-[140px] cursor-not-allowed text-center text-[10px] font-medium uppercase leading-tight tracking-[0.2em] text-white/75 sm:text-[11px]"
           >
             {item.label}
           </span>
@@ -167,7 +167,7 @@ export default function Header({ variant = "default", logoSrc = "/figma/nusafiri
             <picture className={isHero ? "about-hero-header__picture" : undefined}>
               {(mobileLogoSrc || variant === "aboutHero") && (
                 <source
-                  media="(max-width: 640px)"
+                  media="(max-width: 760px)"
                   srcSet={mobileLogoSrc ?? "/nusafiri%20logo%201.png"}
                 />
               )}
@@ -216,7 +216,7 @@ export default function Header({ variant = "default", logoSrc = "/figma/nusafiri
                 <li key={item.label}>
                   {blockedMenuUrls.has(item.href) ? (
                     <span
-                      className="site-nav-disabled block text-xs uppercase tracking-widest-xl font-medium"
+                      className="site-nav-disabled block text-xs uppercase tracking-widest-xl font-medium text-nusafiri-charcoal"
                       aria-disabled="true"
                     >
                       {item.label}

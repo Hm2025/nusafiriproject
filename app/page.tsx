@@ -36,13 +36,16 @@ export default function Home() {
       <div className="relative flex w-full flex-col items-start overflow-x-hidden" data-node-id="2022:337">
         <section className="home-hero relative h-[1055px] w-full overflow-hidden" data-node-id="2016:4">
           <div className="home-hero__background" aria-hidden="true" data-node-id="2016:6">
-            <img src="/Overlay%20(3).png" alt="" />
+            <picture>
+              <source media="(max-width: 760px)" srcSet="/Overlay%20(4).png" />
+              <img src="/Overlay%20(3).png" alt="" />
+            </picture>
           </div>
 
           <Header
             variant="homeHero"
             logoSrc="/figma/nusafiri-logo.svg"
-            mobileLogoSrc="/nusafiri%20logo%201.png"
+            mobileLogoSrc="/nusafiri%20logo%201%20(1).png"
           />
 
           <div className="home-hero__copy" data-node-id="2016:9">
@@ -51,7 +54,7 @@ export default function Home() {
                 We design experiences
               </h1>
               <p className="home-hero__subtitle" data-node-id="2016:12">
-                <span>that take you away, so you can find your way</span>
+                <span>that take you away, so you can <br className="home-hero__mobile-break" />find your way</span>
                 <span>back to yourself.</span>
               </p>
             </div>
@@ -86,8 +89,21 @@ export default function Home() {
 
             <div className="about-export__art" aria-label="Hospitality, destination and floral imagery">
               <img className="about-export__interior" src="/image%203.png" alt="Elegant hotel interior" />
-              <img className="about-export__destination" src="/image%202.png" alt="Whitewashed Mediterranean village" />
-              <img className="about-export__flowers" src="/plumeria-frangipani-temple-tree-flower-close-up-single-whiteyellow-plumeria-flowers-bouquet-isolated-white-background%201.png" alt="White and yellow plumeria flowers" />
+              <picture>
+                <source media="(max-width: 760px)" srcSet="/image%202%20(1).png" />
+                <img className="about-export__destination" src="/image%202.png" alt="Whitewashed Mediterranean village" />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width: 760px)"
+                  srcSet="/plumeria-frangipani-temple-tree-flower-close-up-single-whiteyellow-plumeria-flowers-bouquet-isolated-white-background%201%20(1).png"
+                />
+                <img
+                  className="about-export__flowers"
+                  src="/plumeria-frangipani-temple-tree-flower-close-up-single-whiteyellow-plumeria-flowers-bouquet-isolated-white-background%201.png"
+                  alt="White and yellow plumeria flowers"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -108,7 +124,10 @@ export default function Home() {
 
         <section className="service-story" aria-labelledby="service-story-title">
           <div className="service-story__canvas">
-            <img className="service-story__coast" src={imgImage26} alt="" aria-hidden="true" />
+            <picture>
+              <source media="(max-width: 760px)" srcSet="/image%2026%20(1).png" />
+              <img className="service-story__coast" src={imgImage26} alt="" aria-hidden="true" />
+            </picture>
             <div className="service-story__panel" aria-hidden="true" />
             <div className="service-story__pattern-frame" aria-hidden="true">
               <img className="service-story__pattern" src="/Logo%26Patterns-03%206%20(Traced).png" alt="" />
@@ -122,12 +141,18 @@ export default function Home() {
               </p>
             </div>
             <p className="service-story__signature">Your story comes first.</p>
-            <img
-              className="service-story__luggage"
-              src={imgGeminiGeneratedImage8Ly3R98Ly3R98Ly3Photoroom1}
-              alt=""
-              aria-hidden="true"
-            />
+            <picture>
+              <source
+                media="(max-width: 760px)"
+                srcSet="/Gemini_Generated_Image_8ly3r98ly3r98ly3-Photoroom%201%20(1).png"
+              />
+              <img
+                className="service-story__luggage"
+                src={imgGeminiGeneratedImage8Ly3R98Ly3R98Ly3Photoroom1}
+                alt=""
+                aria-hidden="true"
+              />
+            </picture>
           </div>
         </section>
 
@@ -148,13 +173,6 @@ export default function Home() {
                   </div>
                 </Link>
               ))}
-              <Link href={experienceItems[0].href} className="experience-card experience-card--mobile-only">
-                <img className="experience-card__image" src={experienceImages[0]} alt="" />
-                <div className="experience-card__caption">
-                  <h3><span>VIP</span><span>Concierge</span></h3>
-                  <p>Make every guest feel expected, welcomed and valued.</p>
-                </div>
-              </Link>
             </div>
           </div>
         </section>
